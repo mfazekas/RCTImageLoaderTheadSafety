@@ -62,6 +62,7 @@ function App(): React.JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
+  return (<View style={{flex:1, backgroundColor:'lightred'}} />);
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar

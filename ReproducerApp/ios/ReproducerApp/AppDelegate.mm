@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import "ImageLoaderThreadTester.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,7 @@
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
+  [ImageLoaderThreadTester start:bridge];
   return [self bundleURL];
 }
 
